@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Pagina de prezentare 
+        </title>
+        <link rel="stylesheet" href="Style.css">
+        <script>
+            function viitor()
+			{
+                document.getElementById("Nume").innerHTML = "Dr. Ing. Maties Raluca";
+                document.getElementById("poza").src = "rmp.jpg";
+                document.getElementById("poza").style.width = " 300px";
+                document.getElementById("poza").style.opacity = "80%";
+                document.getElementById("poza").style.border = "8px";
+                document.body.style.backgroundColor = " green";
+                document.getElementById("div").style.backgroundColor = "yellow";
+                document.getElementById("p").style.fontFamily = "Lucida Console, monospace";
+            }
+                var tabel = document.getElementById("tabel");{
+				tabel.rows[0].cells[0].innerHTML="OSUT CLUJ";
+				tabel.rows[0].cells[1].innerHTML="Departamentul Media";
+				tabel.rows[2].cells[0].innerHTML="UTCN";
+				tabel.rows[2].cells[1].innerHTML = "Public Speaking";
+				tabel.rows[4].cells[0].innerHTML = " -";
+                tabel.rows[4].cells[1].innerHTML = " Anul II";
+            }
+            function Varsta(){
+                    var azi = new Date;
+                    var varstainani;
+                    var anNastere = document.getElementById("ani").innerHTML;
+                    var ancurent = azi.getFullYear();
+                    varstainani = ancurent - anNastere;
+                    document.getElementById("ani").innerHTML = varstainani;
+            }
+        </script>
+		<style>
+				body 
+				{
+					background-color: lightblue;
+				}
+
+				h1 
+				{
+					font-family: verdana;
+					font-size: 36px;
+					font-style: italic;
+				}
+
+				h2
+				{
+					font-family: verdana;
+					font-size: 25px;
+				}
+
+				p
+				{
+					font-family: verdana;
+					font-size:20px
+				}
+
+				b
+				{
+					font-family: verdana;
+					font-size:20px
+				}
+
+				img
+				{
+					width:200px;
+					height:250px;
+					border-radius: 20px;
+					margin-left: 10px;
+					border: 3px solid #73AD21;
+					opacity: 85%;
+				}
+
+				table
+				{
+				margin: left;
+				border: 2px solid dodgerblue;
+				background-color: lime;
+				}
+
+
+				tr
+				{
+				border:2px solid orangered;
+				font-family: arial, helvetica, sans-serif;
+				}
+
+				td
+				{
+					border: 2px solid orangered;
+				}
+
+				ul
+				{
+					border: 2px solid dodgerblue;
+					background-color:lime;
+				}
+
+				li
+				{
+					border: 2px solid orangered;
+				}
+	</style>
+      
+    </head>
+    
+    <body>
+        <div id="div">
+
+        
+           <h2 id="Nume">Maties Raluca-Adina</h2>
+
+             <p onmouseover=Varsta() id="ani" >2002</p>
+        
+       
+        <img id="poza" src="maties raluca.jpg">
+        <p>
+            <b>Data nașterii: </b> 22/01/2002
+        </p>
+
+        
+        <p id="p">
+            <b>Adresa de email: </b>  maties.raluca@yahoo.com
+        </p>
+        <p id="p">
+            <b>Număr de telefon: </b>  0744xxxyyy
+        </p>
+        
+        <p id="p">
+            
+           <b id="p" >Citat:</b> „Dreams don`t work unless you do!”
+        </p>
+
+ <table id="tabel">
+            <tr>
+					<td>
+						Algebra liniara
+						</td>
+					<td>
+						<a href="file:///C:/Users/Ralu%20Maties/Desktop/algebra.pdf">
+						file:///C:/Users/Ralu%20Maties/Desktop/algebra.pdf</a>
+					</td>
+				</tr>
+				<tr>
+						</tr>
+				<tr>
+					<td>
+						Informatica aplicata
+						</td>
+					<td>
+						<a href="file:///C:/Users/Ralu%20Maties/Desktop/info%20aplicata.pdf">
+						file:///C:/Users/Ralu%20Maties/Desktop/info%20aplicata.pdf</a>
+					</td>
+				</tr>
+				<tr>
+						</tr>
+				<tr>
+					<td>
+						Elemente de fizica
+						</td>
+					<td>
+						<a href="file:///C:/Users/Ralu%20Maties/Desktop/fizica.pdf">
+						file:///C:/Users/Ralu%20Maties/Desktop/fizica.pdf</a>
+					</td>
+				</tr>
+        </table>
+       <ul>
+           <h4>
+                    Hobby-uri
+                </h4>
+            
+            <li>
+					Fotografia 
+            </li>
+            <li>
+					Cititul
+            </li>
+            <li>
+					Sportul
+            </li>
+        </ul>
+    </div>
+    <br>
+    
+        <button type="button" onclick="viitor()">
+           Alta Viata
+        </button>
+    </body>
+
+</html>
